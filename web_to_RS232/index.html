@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset='utf-8'>
+		<title>
+		Relay Control
+		</title>
+		<link rel="stylesheet" href="css/style.css">
+		<script src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
+		 <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.1.1/socket.io.js"></script>
+	</head>
+	<body>
+		<div id='contenido'>
+			<header>
+				<hgroup>
+					<h1>Relay Control</h1>
+				</hgroup>
+				 
+			
+			</header>
+			<section>
+				<div id='textoPr'>
+					<table style="width:40">
+						<tr>
+							<th>
+								<hgroup>
+									<h2>Configuration</h2>
+								</hgroup>
+							</th>
+												
+						</tr>
+						<tr>
+							<td>
+								<h4>Nº of Cluster</h4>
+								<div id="clusters">
+								Not devices found...
+								</div>
+							</td>
+							<td> 
+								<h4>Select cluster</h4>
+								<select id="cluster">
+									<option value="0">Cluster 1</option>
+								</select> 
+							</td>
+						</tr>
+
+						<tr>
+							<td>
+								<h4>Nº of Relay</h4>
+								<div id="relays">
+								Not devices found...
+								</div>
+								
+							</td>
+							<td> 
+								<h4>Select Section</h4>
+								<select id="section">
+									<option value="0">Section 0 Relay 0-31</option>
+								</select> 
+							</td>
+						</tr>
+
+						<tr>
+							<td>
+								<ul id="control">
+									<li id="mod" >Init</li>
+									<li id="aply" >Aply</li>
+								</ul>
+							</td>
+
+						</tr>
+						
+					</table> 
+				
+				
+					<div id="text">
+					<ul id="control">
+									<li id="set">Set</li>
+									<li id="res">Reset</li>
+									<li id="resAll">Reset All</li>
+								</ul>
+						<p> First select the reles you want modify and after select the function</p>
+						<p id="info"><p>
+						<canvas id="canvas"></canvas>
+					</div>
+					
+				</div>
+				
+			</section>
+			
+		</div>
+		
+		<footer>				<!--to make decorative figures is userfull a canvas-->
+		</footer>
+		<script src="js/conf.js"></script>
+	</body>
+</html>
